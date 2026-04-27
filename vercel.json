@@ -1,1 +1,23 @@
-{"rewrites":[{"source":"/scan/:chain/:contract*","destination":"/scan.html"}],"headers":[{"source":"/(.*)","headers":[{"key":"Cache-Control","value":"s-maxage=30, stale-while-revalidate=60"}]}]}
+{
+  "rewrites": [
+    {
+      "source": "/scan/:chain/:id*",
+      "destination": "/scan.html"
+    },
+    {
+      "source": "/pair/:chain/:id*",
+      "destination": "/scan.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=20, stale-while-revalidate=40"
+        }
+      ]
+    }
+  ]
+}
