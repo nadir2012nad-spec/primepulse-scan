@@ -1,14 +1,12 @@
-# PrimePulse OPS Definitive Scan
+# PrimePulse OPS Token Preview Scan
 
-Definitive Vercel version:
-- Accepts DexScreener URL, pair address, token contract, encoded URL, or accidentally nested PrimePulse scan URL
-- Normalizes the input server-side
-- Server-side token-specific title + preview metadata
-- Real logo + favicon embedded in base64
-- Charts, curves, bars, risk index, route coverage, signal decomposition
-- Services and pricing action map
+This version prioritizes CTR:
+- OG/Twitter preview image = token image from DexScreener (`pair.info.imageUrl`)
+- Fallback image = PrimePulse OPS logo
+- Twitter card = summary_large_image
+- Page hero shows token image + PrimePulse branding
+- Server-side token-specific metadata remains active
+- Accepts DexScreener URL, pair address, contract, encoded/nested URLs
 
 Use:
 https://YOUR-VERCEL-DOMAIN/scan/solana/PAIR_ADDRESS
-
-Also works if the id accidentally contains a DexScreener URL or encoded PrimePulse URL.
