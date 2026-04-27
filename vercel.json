@@ -3,6 +3,14 @@
     {
       "source": "/scan/:chain/:id*",
       "destination": "/api/scan"
+    },
+    {
+      "source": "/pair/:chain/:id*",
+      "destination": "/api/scan"
+    },
+    {
+      "source": "/s/:chain/:id*",
+      "destination": "/api/scan"
     }
   ],
   "headers": [
@@ -11,7 +19,7 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "s-maxage=20, stale-while-revalidate=40"
+          "value": "s-maxage=15, stale-while-revalidate=30"
         }
       ]
     }
