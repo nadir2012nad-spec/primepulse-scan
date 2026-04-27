@@ -1,0 +1,1 @@
+{"rewrites":[{"source":"/scan/:chain/:contract*","destination":"/scan.html"}],"headers":[{"source":"/(.*)","headers":[{"key":"Cache-Control","value":"s-maxage=30, stale-while-revalidate=60"}]}]}
