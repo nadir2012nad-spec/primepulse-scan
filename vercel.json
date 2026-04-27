@@ -2,11 +2,7 @@
   "rewrites": [
     {
       "source": "/scan/:chain/:id*",
-      "destination": "/scan.html"
-    },
-    {
-      "source": "/pair/:chain/:id*",
-      "destination": "/scan.html"
+      "destination": "/api/scan"
     }
   ],
   "headers": [
